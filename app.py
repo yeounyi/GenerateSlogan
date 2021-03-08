@@ -391,9 +391,9 @@ try:
             for k in keyword_dict:
                 raw_pred[k] = keyword_dict[k]
             pred.append((tokenizer.decode(raw_pred)).replace('<s>', '').replace('</s>', '').replace('<pad>', ''))
-
+        
+        print(pred)
         return pred
-        #print(pred)
 
 
     def score_slogan(pred):
