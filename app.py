@@ -392,7 +392,6 @@ try:
                 raw_pred[k] = keyword_dict[k]
             pred.append((tokenizer.decode(raw_pred)).replace('<s>', '').replace('</s>', '').replace('<pad>', ''))
         
-        print(pred)
         return pred
 
 
@@ -443,8 +442,9 @@ try:
         for i, score in enumerate(pred_score):
             print(i+1, ': ' ,pred[score])
             sorted_slogans.append(pred[score])
-
-        return sorted_slogans
+        
+        # showing only top 5 
+        return sorted_slogans[:5]
 
 
 
