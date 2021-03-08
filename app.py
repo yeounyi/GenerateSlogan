@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 from load_css import local_css
 import argparse
 import random
@@ -15,6 +16,12 @@ import requests
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from collections import defaultdict
 import re
+
+
+logging.set_verbosity_info()
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 
 # try-except phrase for hide unnecessary error messages  
 try:
@@ -53,10 +60,6 @@ try:
     user_input = st.text_input("Give me a keyword you want the slogans to include: ")
 
 
-    logging.set_verbosity_info()
-
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 
     # https://github.com/godatadriven/rhyme-with-ai/blob/master/src/rhyme_with_ai/rhyme.py
     def query_datamuse_api(word: str, n_rhymes) -> list:
@@ -78,7 +81,7 @@ try:
         #    "https://api.datamuse.com/words", params={"ml": word, "rel_cns":word}
         # ).json()
 
-        words = [_["word"] for _ in out]
+        words = [_["word"] for _ in out if len(_["word"].split())==1]
         if n_rhymes is None:
             return words
         return words[:n_rhymes]
@@ -393,6 +396,7 @@ try:
             pred.append((tokenizer.decode(raw_pred)).replace('<s>', '').replace('</s>', '').replace('<pad>', ''))
 
         return pred
+        #print(pred)
 
 
     def score_slogan(pred):
@@ -442,7 +446,7 @@ try:
         for i, score in enumerate(pred_score):
             print(i+1, ': ' ,pred[score])
             sorted_slogans.append(pred[score])
-
+        
         # showing only top 5 
         return sorted_slogans[:5]
 
@@ -487,7 +491,8 @@ try:
             st.markdown(html_txt, unsafe_allow_html=True)
             st.write('')
 
-
 except:
     pass
+    #st.write('Sorry :( The computer failed to come up with any slogan 😥')
+
 
