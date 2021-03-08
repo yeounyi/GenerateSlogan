@@ -34,7 +34,7 @@ try:
     # Generate Slogans with Phonetic Similarity
     [![github](https://github.com/yeounyi/GenerateSlogan/blob/main/img/github.png?raw=true)](https://github.com/yeounyi/GenerateSlogan)
     &nbsp[![linked](https://github.com/yeounyi/GenerateSlogan/blob/main/img/linkedin.png?raw=true)](https://in.linkedin.com/in/yeoun-yi-989360166/)
-    &nbsp[![blog](https://github.com/yeounyi/GenerateSlogan/blob/main/img/blog.png?raw=true)](https://yeounyi.github.io/2021/02/23/model.html)
+    &nbsp[![blog](https://github.com/yeounyi/GenerateSlogan/blob/main/img/post.png?raw=true)](https://yeounyi.github.io/2021/02/23/model.html)
     
     
     """
