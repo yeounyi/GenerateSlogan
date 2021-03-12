@@ -391,7 +391,6 @@ def score_slogan(pred):
     # print(senti_total_score) # (1,10)
     # torch.argsort(senti_total_score) # 값 작은 순서대로 index tensor 반환
 
-    ## DOMAIN RELATEDNESS?
 
     final_dict = defaultdict(lambda:0)
     for i, key in enumerate(torch.argsort(grammar_total_score)):
@@ -405,7 +404,6 @@ def score_slogan(pred):
 
     sorted_slogans = []
     for i, score in enumerate(pred_score):
-        print(i+1, ': ' ,pred[score])
         sorted_slogans.append(pred[score])
 
     # showing only top 5
@@ -420,6 +418,9 @@ if __name__ == '__main__':
     if args.keyword:
         pred = generate_slogan(str(args.keyword))
         scored_pred = score_slogan(pred)
+        print()
+        print('Ta-Da 👏👏')
+        for i in range(len(scored_pred)):
+            print(i+1, ' ' + scored_pred[i])
 
 # CUDA_VISIBLE_DEVICES=0 python3 generate_slogan.py -keyword cake
-
