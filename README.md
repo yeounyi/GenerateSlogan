@@ -6,11 +6,8 @@ Please note this is a beta version. The output may not be the best slogan ever. 
 * Phonetically similar words with the keyword and the keyword itself is bolded.
 
 
-* INPUT <br>
 ```python3 generate_slogan.py -keyword best```
-<br>
 
-* OUTPUT
 1. the **best buys**.
 2. \<name\>. **buys** the **best**.
 3. your **best bet**.
@@ -24,11 +21,8 @@ Please note this is a beta version. The output may not be the best slogan ever. 
 
 <br>
 
-* INPUT <br>
 ```python3 generate_slogan.py -keyword cake```
-<br>
 
-* OUTPUT
 1. **cut** your **cake** in healthy treats.
 2. favorite **cake**. your favorite **cookie**.
 3. \<name\>. eat your **cake cut**.
