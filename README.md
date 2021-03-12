@@ -12,10 +12,10 @@ Please note this is a beta version. The output may not be the best slogan ever. 
 
 * OUTPUT
 1. the **best buys**.
-2. <name>. **buys** the **best**.
+2. \<name\>. **buys** the **best**.
 3. your **best bet**.
 4. the **best besee**.
-5. <loc> ’s **best bets**.
+5. \<loc\> ’s **best bets**.
 6. **bets** at their **best**.
 7. **besee** is the **best** for you.
 8. good news for **best** life, **bad** for beds.
@@ -31,7 +31,7 @@ Please note this is a beta version. The output may not be the best slogan ever. 
 * OUTPUT
 1. **cut** your **cake** in healthy treats.
 2. favorite **cake**. your favorite **cookie**.
-3. <name>. eat your **cake cut**.
+3. \<name\>. eat your **cake cut**.
 4. the best ice **coat** cream **cake** ever tasted.
 5. the **cake** is always the **kicker**.
 6. it tastes like a **cookie** and only a **cake** with a sandwich!
