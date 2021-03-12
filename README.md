@@ -3,7 +3,9 @@ Please note this is a beta version. The output may not be the best slogan ever. 
 Deeper explanation about this model can be found in <a href='https://yeounyi.github.io/2021/02/23/model.html' target="_blank">my blog</a>.
 * <b>\<name\>, \<loc\>, \<year\> </b>are special tokens. You can substitute these tokens with your brand name, brand location or founding year.
 
-#### Examples
+-----
+
+### Examples
 * Phonetically similar words with the keyword and the keyword itself is bolded.
 
 
