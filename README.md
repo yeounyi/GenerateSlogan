@@ -22,6 +22,7 @@ Please note this is a beta version. The output may not be the best slogan ever. 
 10 :  betting at's best.
 ```
 <br>
+
 * INPUT <br>
 ```python3 generate_slogan.py -keyword cake```
 <br>
