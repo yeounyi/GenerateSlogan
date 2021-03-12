@@ -1,6 +1,6 @@
 # Generate Slogans with Phonetic Similarity 🎶
 Please note this is a beta version. The output may not be the best slogan ever. And It may take a couple of minutes.
-* NAME, LOC, YEAR are special words. You can substitute these words with your brand name, brand location or founding year.
+* <name>, <loc>, <year> are special words. You can substitute these words with your brand name, brand location or founding year.
 
 #### Examples
 * INPUT <br>
