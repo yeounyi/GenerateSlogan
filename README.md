@@ -1,6 +1,6 @@
 # Generate Slogans with Phonetic Similarity 🎶
 Please note this is a beta version. The output may not be the best slogan ever. And It may take a couple of minutes.
-* <b>\<name\>, \<loc\>, \<year\> </b>are special words. You can substitute these words with your brand name, brand location or founding year.
+* <b>\<name\>, \<loc\>, \<year\> </b>are special tokens. You can substitute these tokens with your brand name, brand location or founding year.
 
 #### Examples
 
